@@ -1,0 +1,63 @@
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+}
+
+
+h1 {
+font-size: 60px;  
+font-weight: 200;
+text-align: center;
+margin-top: 100px
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 100px ;
+  
+}
+
+input {
+  width: 80%;
+  font-size: 17px;
+  line-height: 25px;
+  border-radius:5px;
+  
+}
+
+form button {
+  width: 200px;
+  background-color: purple;
+  color: white;
+  font-size: 17px;
+  line-height: 25px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+ul {
+  color: black;
+  list-style-type: none;
+  margin-left: 60px;
+}
+
+li {
+  display: flex;
+  flex-direction: row;
+
+}
+
+li:hover{
+  cursor: pointer;;
+}
+
+p {
+  margin:0;
+}
+
+.strike{
+  text-decoration: line-through; 
+}
+
