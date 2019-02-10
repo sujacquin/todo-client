@@ -27,15 +27,17 @@ class App extends Component {
   addItem = async (event) => {
     event.preventDefault();
 
-    await this.setState(prevState => ({
-      titleList: [...prevState.titleList, { desc: this.state.title, status: "new" }]
-    }), this.setState({ title: "" }));
-
     const array = this.state.titleList;
+
+    array.push({ desc: this.state.title, status: "new" })
+
+    // await this.setState(prevState => ({
+    //   titleList: [...prevState.titleList, { desc: this.state.title, status: "new" }]
+    // }), this.setState({ title: "" }));
 
     array.sort(function (a, b) { return a.status.length - b.status.length });
 
-    await this.setState({ titleList: array })
+    await this.setState({ title: "", titleList: array })
 
   }
 
