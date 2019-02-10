@@ -31,6 +31,11 @@ class App extends Component {
       titleList: [...prevState.titleList, { desc: this.state.title, status: "new" }]
     }), this.setState({ title: "" }));
 
+    const array = this.state.titleList;
+
+    array.sort(function (a, b) { return a.status.length - b.status.length });
+
+    await this.setState({ titleList: array })
 
   }
 
@@ -57,12 +62,9 @@ class App extends Component {
     const array = this.state.titleList;
     array.splice(index, 1)
 
+    array.sort(function (a, b) { return a.status.length - b.status.length });
 
     await this.setState({ titleList: array })
-
-
-
-
 
   }
 
