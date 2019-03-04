@@ -97,7 +97,7 @@ class App extends Component {
 
 
   reloadPage = async () => {
-    const response = await axios.get("http://localhost:3000");
+    const response = await axios.get("https://todo-server-susana.herokuapp.com/");
     const array = response.data;
     array.sort(function (a, b) { return a.status.length - b.status.length });
 
@@ -109,7 +109,7 @@ class App extends Component {
   addItem = async (event) => {
     event.preventDefault();
 
-    await axios.post("http://localhost:3000/create", {
+    await axios.post("https://todo-server-susana.herokuapp.com/create", {
       desc: this.state.title
     })
 
@@ -119,7 +119,7 @@ class App extends Component {
 
   strikeTask = async (index) => {
 
-    await axios.post("http://localhost:3000/update", {
+    await axios.post("https://todo-server-susana.herokuapp.com/update", {
       id: this.state.titleList[index]._id
     })
 
@@ -129,7 +129,7 @@ class App extends Component {
 
   removeTask = async (index) => {
 
-    await axios.post("http://localhost:3000/delete", {
+    await axios.post("https://todo-server-susana.herokuapp.com/delete", {
       id: this.state.titleList[index]._id
     })
 
@@ -158,7 +158,7 @@ class App extends Component {
   }
 
   async componentDidMount() {
-    const response = await axios.get("http://localhost:3000");
+    const response = await axios.get("https://todo-server-susana.herokuapp.com/");
     const array = response.data;
     array.sort(function (a, b) { return a.status.length - b.status.length });
     await this.setState({ titleList: array })
