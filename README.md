@@ -1,69 +1,46 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Synopsis
 
-## Available Scripts
+This is a simple to-do list built with React.
 
-In the project directory, you can run:
+<img width="577" alt="screenshot 2019-03-04 at 21 30 31" src="https://user-images.githubusercontent.com/46267460/53761078-ec457d80-3ec4-11e9-84c5-4e38115b8e0e.png">
 
-### `npm start`
+## Usage Example
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+See Demo: https://todo-susana.herokuapp.com/
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+![todo-list](https://user-images.githubusercontent.com/46267460/53761282-7857a500-3ec5-11e9-8ca7-5b2b91f3db22.gif)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Functionalities
 
-### `npm run build`
+Add tasks <br>
+Complete task by clicking on it <br>
+Delete task by clicking on icon <br>
+Drag and drop tasks
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Running the project
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+Clone this repository :
+```bash
+https://github.com/sujacquin/todo-client.git
+cd todo-client
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Start the server
+```bash
+npm start
+```
+Build the projet
+```bash
+npm run build
+```
 
-### `npm run eject`
+## Built With
+html <br>
+css <br>
+JavaScript <br>
+React.js <br>
+Create React App <br>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-# todo-client
+## Acknowledgments
+This project was bootstrapped with Create React App.
